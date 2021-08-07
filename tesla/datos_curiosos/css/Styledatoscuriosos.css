@@ -1,0 +1,168 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+
+}
+
+.cuadropequeño{
+    background-color: #946c3c;
+    width: 357px;
+    height: 15vh;
+    border: 1px solid #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cuadroIzquierdo{
+    background-color:#626262;
+    width: 357px ;
+    height: 85vh;
+    border: 2px solid #FFFFFF;
+    
+}
+
+h3{
+    color: #fff;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 49px;
+}
+.lista{
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    border-bottom: 2px solid #946c3c;
+    
+
+}
+a{
+    color: white;
+    text-decoration: None
+}
+a:hover{
+    color: #000;
+}
+.logo{
+    margin-top: 25px;
+    margin-left: 25px;
+    width:138px ;
+    height: 178px;
+}
+#ajustar{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cuadroprincipal{
+    background: rgba(0, 0, 0, 0.8);
+    width: 1088px ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    position: absolute;
+    top:60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 66px;
+    color: #946c3c;
+    
+}
+
+h2{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 47px;
+
+width: 900px;
+margin-top: 40px;
+border-bottom: 2px solid #946c3c;
+
+
+
+color: #FFFFFF;
+}
+label{
+    display: none;
+}
+#ocultar{
+    display:none;
+}
+#menuha{
+    display: none;
+}
+.imgmenu{
+        position: absolute;
+        top :26px;
+        right: 0px;
+        
+}
+@media(max-width:500px){
+
+label{
+    display:block ;
+    margin-left:60px;
+    
+}
+.cuadropequeño{
+    width:500px ;
+}
+.cuadroIzquierdo{
+    display:none;
+}
+.menuhambur input[type="checkbox"]:checked ~ .cuadroIzquierdo{
+    display: block;
+    width: 500px;
+        
+}
+#ajustar{
+    flex-direction: column;
+    
+}
+.cuadroprincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:500px ;
+    
+}
+
+h1{
+    position: relative;
+    top:-40px;
+    width: 300px;
+    font-size: 50px;
+}
+h2{
+    top:20px;
+    margin-top: 15px;
+    width: 400px;
+    font-size: 18px;
+}
+}

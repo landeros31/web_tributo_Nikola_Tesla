@@ -1,0 +1,178 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+
+}
+
+.cuadropequeño{
+    background-color: #946c3c;
+    width: 357px;
+    height: 15vh;
+    border: 1px solid #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cuadroIzquierdo{
+    background-color:#626262;
+    width: 357px ;
+    height: 85vh;
+    border: 2px solid #FFFFFF;
+    
+}
+
+h3{
+    color: #fff;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 49px;
+}
+.lista{
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    border-bottom: 2px solid #946c3c;
+    
+
+}
+a{
+    color: white;
+    text-decoration: None
+}
+a:hover{
+    color: #000;
+}
+.logo{
+    margin-top: 25px;
+    margin-left: 25px;
+    width:138px ;
+    height: 178px;
+}
+#ajustar{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cuadroprincipal{
+    background: rgba(0, 0, 0, 0.8);
+    width: 1088px ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadroInfo{
+    display: flex;
+    background-color: #000;
+    width: 560px ;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFFFFF;  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top:  140px;
+}
+h1{
+    position: absolute;
+    top:60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 66px;
+    color: #946c3c;
+    margin-top: 20px;
+}
+.imgprin{
+    width:440px ;
+    height: 65vh;
+}
+.otraimagen{
+    display: none;
+}
+label{
+    display: none;
+}
+#ocultar{
+    display:none;
+}
+#menuha{
+    display: none;
+    }
+    .imgmenu{
+        position: absolute;
+        top :26px;
+        right: 0px;
+        
+    }
+@media(max-width:500px){
+
+label{
+    display:block ;
+    margin-left:60px;
+    
+}
+.cuadropequeño{
+    width:500px ;
+}
+.cuadroIzquierdo{
+    display:none;
+}
+.menuhambur input[type="checkbox"]:checked ~ .cuadroIzquierdo{
+    display: block;
+    width: 500px;
+        
+}
+#ajustar{
+    flex-direction: column;
+    
+}
+.cuadroprincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:500px ;
+    flex-direction:column;
+    
+}
+.cuadroInfo{
+    display: none;
+    width:400px ;
+}
+h1{
+    position: relative;
+    top:-20px;
+    width: 300px;
+    font-size: 50px;
+}
+.otraimagen{
+    display:block;
+   
+   
+}
+#uno{
+    border: 1px solid #946C3C;
+box-sizing: border-box;
+border-radius: 10px;
+}
+}
