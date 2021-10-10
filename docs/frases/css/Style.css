@@ -61,10 +61,9 @@ a:hover{
     color: #000;
 }
 .logo{
-    margin-top: 25px;
-    margin-left: 25px;
-    width:138px ;
-    height: 178px;
+   margin-left: 50px;
+    width:100px ;
+    height: 100px;
 }
 #ajustar{
     display: flex;
@@ -149,6 +148,10 @@ label{
 }
 .cuadropequeño{
     width: 500px;
+    
+}
+h3{
+    margin-right: 30px;
     
 }
 #ajustar{

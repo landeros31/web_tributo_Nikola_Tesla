@@ -61,10 +61,10 @@ a:hover{
     color: #000;
 }
 .logo{
-    margin-top: 25px;
-    margin-left: 25px;
-    width:138px ;
-    height: 178px;
+    
+    margin-left: 50px;
+    width:100px ;
+    height: 100px;
 }
 #ajustar{
     display: flex;
@@ -103,24 +103,22 @@ h1{
     color: #946c3c;
     margin-top: 20px;
 }
-.imgprin{
+.imagenizquierda{
     width:215px ;
-    height: 200px;
-    
+    height: 220px;
 }
 
 .cuadroimagen{
-   
     position: absolute; 
     margin-left: 20px;
     margin-right: 15px;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2);
+    grid-template-columns: repeat(3);
     grid-auto-rows: minmax(50px,auto);
     grid-gap: 15px;
     color: white;
-    font-size: 22px;
+    font-size: 25px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -131,30 +129,26 @@ h1{
 }
 
 
-.imgprin{
-    grid-column: 1;
-    grid-row: 2;
+.imagenizquierda{
+    grid-column: 1/2;
+    grid-row: 1;
     opacity: 0;
     
-    margin-left: 300px;
-    
     
   }
-  .arriba{
-      justify-content: center;
-      grid-column: 1;
+  .superiorderecha{
+      grid-column: 2/4;
       grid-row: 1;
-      width: 700px;
+      width: 570px;
       opacity: 0;
-      margin-left: 250px;
-      
+      font-size: 20px;
   }
   .abajo{
-      grid-column: 1;
-      grid-row: 3;
+      grid-column: 1/4;
+      grid-row: 2;
       opacity: 0;
       width: 800px;
-      
+      font-size: 20px;
   }
   
 
@@ -168,20 +162,14 @@ h1{
 #label4:hover{
     background-color: #946c3c;
 }
-#label5:hover{
-    background-color: #946c3c;
-}
-#label6:hover{
-    background-color: #946c3c;
-}
 
 label{
     display: none;
 }
 #label2{
     position: absolute;
-    top:500px;
-    margin-left: 240px;
+    top:400px;
+    margin-left: 320px;
 display:block;
 
 width: 55px;
@@ -191,7 +179,9 @@ width: 55px;
     border-radius: 30px;
 }
 #sboton1{
- 
+    position: absolute;
+    top:420px;
+    margin-left: 150px;
 display:none;
 }
 #sboton2{
@@ -202,18 +192,10 @@ display:none;
 
 display:none;
 }
-#sboton4{
-
-display:none;
-}
-#sboton5{
-
-display:none;
-}
 #label3{
     position: absolute;
-    top:500px;
-    margin-left: 320px;
+    top:400px;
+    margin-left: 400px;
 display:block;
 width: 55px;
     height: 17px;
@@ -223,18 +205,7 @@ width: 55px;
 }
 #label4{
     position: absolute;
-    top:500px;
-    margin-left: 400px;
-display:block;
-width: 55px;
-    height: 17px;
-    background-color: #626262;
-    border: 1px solid #FFFFFF;
-    border-radius: 30px;
-}
-#label5{
-    position: absolute;
-    top:500px;
+    top:400px;
     margin-left: 480px;
 display:block;
 width: 55px;
@@ -243,39 +214,27 @@ width: 55px;
     border: 1px solid #FFFFFF;
     border-radius: 30px;
 }
-#label6{
-    position: absolute;
-    top:500px;
-    margin-left: 560px;
-display:block;
-width: 55px;
-    height: 17px;
-    background-color: #626262;
-    border: 1px solid #FFFFFF;
-    border-radius: 30px;
-}
-
-.cuadroimagen input[type="radio"]:checked ~ .arriba{
+.cuadroimagen input[type="radio"]:checked ~ .imagenizquierda{
     opacity:1;
 }
-.cuadroimagen input[type="radio"]:checked ~ .imgprin{
+.cuadroimagen input[type="radio"]:checked ~ .superiorderecha{
     opacity:1;
 }
 .cuadroimagen input[type="radio"]:checked ~ .abajo{
     opacity:1;
 }
 
-#ocultar{
-    display:none;
+.imgmenu{
+    position: absolute;
+    top :26px;
+    right: 0px;
+    
 }
 #menuha{
-    display: none;
+display: none;
 }
-.imgmenu{
-        position: absolute;
-        top :26px;
-        right: 0px;
-        
+#ocultar{
+    display:none;
 }
 @media(max-width:500px){
 
@@ -287,22 +246,27 @@ width: 55px;
     .cuadropequeño{
         width:500px ;
     }
+    h3{
+        margin-right: 30px;
+        
+    }
     .cuadroIzquierdo{
         display:none;
     }
-    .menuhambur input[type="checkbox"]:checked ~ .cuadroIzquierdo{
-        display: block;
-        width: 500px;
-            
-    }
-    #ajustar{
+.menuhambur input[type="checkbox"]:checked ~ .cuadroIzquierdo{
+    display: block;
+    width: 500px;
+        
+}
+
+
+ #ajustar{
         flex-direction: column;
         
     }
     .cuadroprincipal{
         display: flex;
         
-        justify-content: flex-start;
         align-items: center;
         width:500px ;
         height: auto;
@@ -313,63 +277,56 @@ width: 55px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        margin-top: 10px;
+        
         width:450px ;
         height: auto;
         
     }
     
-    .imgprin{
+    .imagenizquierda{
         width:182px ;
         height:180px ;
         margin-left: 100px;
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1;
         opacity: 1;
         
         
       }
-      .arriba{
+      .superiorderecha{
           width:400px ;
           grid-column: 1;
-          grid-row: 1;
+          grid-row: 2;
+          margin-left: 0px;
           opacity: 1;
-          margin-left: 10px;
-          
-         
-          
       }
       .abajo{
           grid-column: 1;
           grid-row: 3;
-          opacity: 1;
+          margin-left: 0px;
           width:400px ;
+          opacity: 1;
       }
     h1{
         position: relative;
-        top:0px;
+        
         width: 300px;
         font-size: 50px;
     }
    .botones{
        display: none;
    }
-#label2{
-       display:none;
-}
-#label3{
-    display:none;
-}
-#label4{
-    display:none;
-}
-#label5{
-    display:none;
-}
-#label6{
-    display:none;
-}
-.cuadroimagen{
-    position: relative;
+   .cuadroimagen{
+       position:relative;
+   }
+   #label2{
+display: none;
+   }
+   #label3{
+    display: none;
+   }
+   
+   #label4{
+    display: none;
 }
     }
